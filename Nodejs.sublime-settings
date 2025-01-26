@@ -1,15 +1,9 @@
 {
-  // save before running commands
-  "save_first": true,
-  // if present, use this command instead of plain "node"
-  // e.g. "/usr/bin/node" or "C:\bin\node.exe"
-  "node_command": false,
-  // Same for NPM command
-  "npm_command": false,
-  // as 'NODE_PATH' environment variable for node runtime
-  "node_path": false,
-
-  "expert_mode": false,
-
-  "output_to_new_tab": false
+"run_builddocs_at_startup"	: false	,// build completions on each startup
+"save_first"              	: true 	,// save before running commands
+"node_command"            	: false	,// if present, use this command instead of plain "node" e.g. "/usr/bin/node" or "C:\bin\node.exe"
+"npm_command"             	: false	,// Same for NPM command
+"node_path"               	: false	,// as 'NODE_PATH' environment variable for node runtime
+"expert_mode"             	: false	,//
+"output_to_new_tab"       	: false
 }
