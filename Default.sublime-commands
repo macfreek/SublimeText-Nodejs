@@ -11,11 +11,11 @@
 {"caption":"Nodejs::NPM::Search"                         	,"command":"node_npm_search"    	},
 {"caption":"Nodejs::Build Completions"                   	,"command":"node_builddocs"     	},
 {"caption":"Nodejs::UglifyJS"                            	,"command":"node_uglify"        	},
-{"caption":"Nodejs::User File Settings"                  	,"command":"edit_settings","args":{
+
+{"caption":"Nodejs::User File Settings side-by-side"	,"command":"edit_settings","args":{
   "base_file": "${packages}/Nodejs/Nodejs.sublime-settings",
-  "default"  : "// Settings in here override those in \"Nodejs/Nodejs.sublime-settings\",\n// and are overridden in turn by syntax-specific settings.\n{\n\t$0\n}\n"}
-},
-{"caption":"Nodejs::User Key Bindings"	,"command":"edit_settings","args":{
+  "default"  : "// Settings in here override those in \"Nodejs/Nodejs.sublime-settings\",\n// and are overridden in turn by syntax-specific settings.\n{\n\t$0\n}\n"}},
+{"caption":"Nodejs::User Key Bindings side-by-side"	,"command":"edit_settings","args":{
   "base_file": "${packages}/Nodejs/Default ($platform).sublime-keymap",
-  "default"  : "// Settings in here override those in \"Nodejs/Default.sublime-keymap\"\n{\n\t$0\n}\n"}
-}]
+  "default"  : "// Settings in here override those in \"Nodejs/Default.sublime-keymap\"\n{\n\t$0\n}\n"}}
+]
