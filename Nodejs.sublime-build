@@ -8,12 +8,12 @@
     {
         "shell_cmd": "taskkill /F /IM node.exe & node $file"
     },
-    "linux":
+  "linux":
     {
-        "shell_cmd": "killall node; /usr/bin/env node $file"
+        "shell_cmd": "/usr/bin/env node $file"
     },
-    "osx":
+  "osx":
     {
-        "shell_cmd": "killall node; /usr/bin/env node $file"
+        "shell_cmd": "/usr/bin/env node $file"
     }
 }
