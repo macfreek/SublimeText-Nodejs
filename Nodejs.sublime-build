@@ -3,7 +3,7 @@
   "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
   "selector": "source.js",
   "shell": true,
-  "encoding": "cp1252",
+  "encoding": "utf-8",
   "windows":
     {
         "shell_cmd": "taskkill /F /IM node.exe & node $file"
