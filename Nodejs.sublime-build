@@ -1,5 +1,4 @@
 {
-  "cmd": ["node", "$file"],
   "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
   "selector": "source.js",
   "shell": true,
@@ -15,5 +14,23 @@
   "osx":
     {
         "shell_cmd": "/usr/bin/env node $file"
-    }
+    },
+  "variants": [
+      {
+        "name": "Run NodeJS with TypeScript transformation (experimental)",
+        "cmd": ["node", "--experimental-transform-types", "$file"],
+        "windows":
+          {
+              "shell_cmd": "taskkill /F /IM node.exe & node --experimental-transform-types $file"
+          },
+        "linux":
+          {
+              "shell_cmd": "/usr/bin/env node --experimental-transform-types $file"
+          },
+        "osx":
+          {
+              "shell_cmd": "/usr/bin/env node --experimental-transform-types $file"
+          }
+      }
+    ]
 }
