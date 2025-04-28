@@ -21,15 +21,15 @@
         "cmd": ["node", "--experimental-transform-types", "$file"],
         "windows":
           {
-              "shell_cmd": "taskkill /F /IM node.exe & node --experimental-transform-types $file"
+              "shell_cmd": "taskkill /F /IM node.exe & node --experimental-transform-types --disable-warning=ExperimentalWarning $file"
           },
         "linux":
           {
-              "shell_cmd": "/usr/bin/env node --experimental-transform-types $file"
+              "shell_cmd": "/usr/bin/env node --experimental-transform-types --disable-warning=ExperimentalWarning $file"
           },
         "osx":
           {
-              "shell_cmd": "/usr/bin/env node --experimental-transform-types $file"
+              "shell_cmd": "/usr/bin/env node --experimental-transform-types --disable-warning=ExperimentalWarning $file"
           }
       }
     ]
